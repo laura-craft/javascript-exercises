@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <title>Odd or Even</title>
+  <head>
+    <script>
+      function oddOrEven(array) {
+        var result = 0;
+        for (var i = 0; i < array.length; i++) {
+          result += array[i];
+        }
+        if (result % 2 == 0) {
+          return "even";
+        } else {
+          return "odd";
+        }
+      }
+      // function oddOrEven(array) {
+      //   return array.reduce(function (sum, item) {
+      //     return sum + item;
+      //   }, 0) %
+      //     2 ==
+      //     0
+      //     ? "even"
+      //     : "odd";
+      // }
+
+      console.log(oddOrEven([1, 2]));
+      console.log(oddOrEven([1, 3]));
+      console.log(oddOrEven([]));
+    </script>
+  </head>
+  <body></body>
+</html>
